@@ -1,0 +1,65 @@
+{
+  "name": "dl-js-reasoner",
+  "version": "0.2.0",
+  "description": "A hypertableau OWL 2 DL reasoner in pure JavaScript, modelled on HermiT. Fills the gap protege-js leaves: full DL consistency, class-expression satisfiability, subsumption/classification and realisation via a tableau calculus (not just forward-chaining RL/QL/EL rules). Consumes protege-js model objects.",
+  "main": "src/index.js",
+  "bin": {
+    "dl-js-reasoner": "bin/dl-js-reasoner.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./cli": "./src/cli/CommandLine.js",
+    "./src/*.js": "./src/*.js",
+    "./src/*": "./src/*.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "npm run test:unit && npm run smoke",
+    "test:unit": "node --test \"test/*.test.js\"",
+    "smoke": "npm run smoke:tableau && npm run smoke:clausify && npm run smoke:classify && npm run smoke:reasoner && npm run smoke:backjump && npm run smoke:reasoner-real && npm run smoke:adapter && npm run smoke:incremental && npm run smoke:datalog && npm run smoke:cli",
+    "smoke:tableau": "node scripts/smoke-tableau.js",
+    "smoke:clausify": "node scripts/smoke-clausification.js",
+    "smoke:classify": "node scripts/smoke-classification.js",
+    "smoke:reasoner": "node scripts/smoke-reasoner.js",
+    "smoke:backjump": "node scripts/smoke-backjump.js",
+    "smoke:reasoner-real": "node scripts/smoke-reasoner-real.js",
+    "smoke:adapter": "node scripts/smoke-adapter.js",
+    "smoke:incremental": "node scripts/smoke-incremental.js",
+    "smoke:datalog": "node scripts/smoke-datalog.js",
+    "smoke:cli": "node scripts/smoke-cli.js",
+    "smoke:clausify-real": "node scripts/clausify-real-ontologies.js",
+    "dump:clausification": "node scripts/dump-clausification.js",
+    "demo": "node examples/demo.js",
+    "cli": "node bin/dl-js-reasoner.js"
+  },
+  "keywords": [
+    "description-logic",
+    "dl",
+    "owl",
+    "owl2",
+    "reasoner",
+    "hypertableau",
+    "tableau",
+    "hermit",
+    "classification",
+    "realisation",
+    "consistency",
+    "satisfiability",
+    "subsumption",
+    "semantic-web",
+    "protege-js"
+  ],
+  "author": "",
+  "license": "LGPL-3.0-or-later",
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "@skaterqiang/protege-js": "*"
+  },
+  "peerDependenciesMeta": {
+    "@skaterqiang/protege-js": {
+      "optional": true
+    }
+  }
+}

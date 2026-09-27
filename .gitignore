@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Test / debug output
+*.log
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Temporary probe / debug scripts (deleted after use by convention)
+_probe*.js
+_dbg*.js
+_disc*.js
