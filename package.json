@@ -1,6 +1,6 @@
 {
   "name": "dl-js-reasoner",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A hypertableau OWL 2 DL reasoner in pure JavaScript, modelled on HermiT. Fills the gap protege-js leaves: full DL consistency, class-expression satisfiability, subsumption/classification and realisation via a tableau calculus (not just forward-chaining RL/QL/EL rules). Consumes protege-js model objects.",
   "main": "src/index.js",
   "bin": {
@@ -49,8 +49,16 @@
     "semantic-web",
     "protege-js"
   ],
-  "author": "",
+  "author": "skaterqiang",
   "license": "LGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skaterqiang/dl-js-reasoner.git"
+  },
+  "homepage": "https://github.com/skaterqiang/dl-js-reasoner#readme",
+  "bugs": {
+    "url": "https://github.com/skaterqiang/dl-js-reasoner/issues"
+  },
   "engines": {
     "node": ">=18"
   },

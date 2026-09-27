@@ -4,7 +4,7 @@ All notable changes to `dl-js-reasoner` are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.3.0]
 
 ### Added
 - **Ported the blocking signature cache** (`src/blocking/BlockingSignatureCache.js`,
@@ -298,4 +298,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   normalization (built-ins throw, matching HermiT), and the protege-js
   adapter/façade (`createReasoner`).
 
-<!-- No remote repository is configured yet; add compare/tag links here once one exists. -->
+[0.3.0]: https://github.com/skaterqiang/dl-js-reasoner/releases/tag/v0.3.0
+[0.2.0]: https://github.com/skaterqiang/dl-js-reasoner/releases/tag/v0.2.0
+[0.1.0]: https://github.com/skaterqiang/dl-js-reasoner/releases/tag/v0.1.0

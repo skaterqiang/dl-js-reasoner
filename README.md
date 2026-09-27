@@ -123,7 +123,7 @@ const DL = require('dl-js-reasoner');
 | `CommandLine`, `CliWriter`, `CliOptions` | The command-line front end: `main(argv, io)` returns an exit code, `parseArguments(argv)` returns the plan without loading, `CliWriter` has the `Writer`/`StringWriter`/`StreamWriter`/`FileWriter`/`openWriter` sinks, and `CliOptions` has `Getopt`, the option table and the help formatter. See [Command line](#command-line). |
 | `HierarchyDumperFSS`, `HierarchyPrinterFSS` | HermiT's functional-syntax hierarchy output — the flat `SubClassOf( <a> <b> )` dump and the indented, prefix-abbreviated `Ontology( … )` document. The everyday route is `reasoner.dumpHierarchies(out, …)` / `reasoner.printHierarchies(out, …)`. |
 | `Prefixes` | Abbreviated-IRI rendering. |
-| `REASONER_NAME`, `REASONER_VERSION` | `'DL-JS-REASONER'`, and the version read straight from `package.json` (currently `'0.2.0'`) — there is a single source of truth, mirroring HermiT's manifest lookup. |
+| `REASONER_NAME`, `REASONER_VERSION` | `'DL-JS-REASONER'`, and the version read straight from `package.json` (currently `'0.3.0'`) — there is a single source of truth, mirroring HermiT's manifest lookup. |
 
 ### `ProtegeAdapter` methods
 
